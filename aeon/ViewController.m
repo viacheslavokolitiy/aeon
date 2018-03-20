@@ -22,8 +22,7 @@
     [self.navigationController setToolbarHidden:NO];
     [self.navigationItem setTitle:@"Aeon"];
     TodoRepository *repository = [[TodoRepository alloc] init];
-    MainView *view = [MainView alloc];
-    [view initWithWidgets:_placeholder];
+    MainView *view = [[MainView alloc]initWithWidgets:_placeholder];
     [_btnAddTodo setAction:@selector(showCreateTodoDialog)];
     MainViewControllerPresenter *presenter = [[MainViewControllerPresenter alloc]initWithRepositoryAndView:repository :view];
     [presenter getTodos];
