@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 @interface MainView : NSObject
 @property(nonatomic, weak) UILabel *placeholderView;
--(void)initWithWidgets:(UILabel*)placeholder;
+-(instancetype)initWithWidgets:(UILabel*)placeholder;
 -(void)showTodos;
 -(void)showCreateNewTodoButton;
 -(void)showPlaceholder;

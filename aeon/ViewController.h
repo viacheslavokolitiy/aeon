@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *placeholder;
-
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *btnAddTodo;
+-(void)showCreateTodoDialog;
 @end
 

@@ -19,14 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController setToolbarHidden:NO];
+    [self.navigationItem setTitle:@"Aeon"];
     TodoRepository *repository = [[TodoRepository alloc] init];
     MainView *view = [MainView alloc];
     [view initWithWidgets:_placeholder];
-    MainViewControllerPresenter *presenter = [MainViewControllerPresenter alloc];
-    [presenter createPresenter:repository :view];
+    [_btnAddTodo setAction:@selector(showCreateTodoDialog)];
+    MainViewControllerPresenter *presenter = [[MainViewControllerPresenter alloc]initWithRepositoryAndView:repository :view];
     [presenter getTodos];
 }
 
+-(void)showCreateTodoDialog {
+    NSLog(@"%s", "Not implemented yet");
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

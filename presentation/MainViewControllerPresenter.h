@@ -14,7 +14,7 @@
 @interface MainViewControllerPresenter : NSObject
 @property(nonatomic, strong) TodoRepository *repository;
 @property(nonatomic, strong) MainView *mainView;
--(id)createPresenter:(TodoRepository*)repository : (MainView*)view;
+-(instancetype)initWithRepositoryAndView:(TodoRepository*)repository : (MainView*)view;
 -(void)getTodos;
 @end
 

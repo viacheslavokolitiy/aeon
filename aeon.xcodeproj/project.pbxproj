@@ -23,7 +23,7 @@
 		4B2E2DA7205FF51600D61144 /* TodoRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E2DA6205FF51600D61144 /* TodoRepository.m */; };
 		4B2E2DAB205FF93F00D61144 /* MainViewControllerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E2DAA205FF93F00D61144 /* MainViewControllerPresenter.m */; };
 		4B2E2DAF205FFF7D00D61144 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E2DAE205FFF7D00D61144 /* MainView.m */; };
-		4B2E2DB1206008A100D61144 /* aeon.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E2D3B205FECA100D61144 /* aeon.xcdatamodeld */; };
+		4B55EE0D2061528E00F0D9A2 /* aeon.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E2D3B205FECA100D61144 /* aeon.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,8 +311,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B55EE0D2061528E00F0D9A2 /* aeon.xcdatamodeld in Resources */,
 				4B00A5B320601F990064FA67 /* .gitignore in Resources */,
-				4B2E2DB1206008A100D61144 /* aeon.xcdatamodeld in Resources */,
 				4B2E2D42205FECA100D61144 /* LaunchScreen.storyboard in Resources */,
 				4B2E2D3F205FECA100D61144 /* Assets.xcassets in Resources */,
 				4B2E2D3A205FECA100D61144 /* Main.storyboard in Resources */,

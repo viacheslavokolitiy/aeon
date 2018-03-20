@@ -8,9 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "MainView.h"
+
 @implementation MainView
--(void)initWithWidgets:(UILabel *)placeholder {
-    self.placeholderView = placeholder;
+-(instancetype)initWithWidgets:(UILabel *)placeholder {
+    if(self = [super init]){
+        self.placeholderView = placeholder;
+    }
+    
+    return self;
 }
 -(void)showTodos{}
 -(void)showCreateNewTodoButton{}

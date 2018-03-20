@@ -14,7 +14,7 @@
         <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Todo" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Todo" positionX="-36" positionY="-498" width="128" height="120"/>
-        <element name="TodoList" positionX="-279" positionY="-126" width="128" height="105"/>
+        <element name="Todo" positionX="-36" positionY="-498" width="128" height="118"/>
+        <element name="TodoList" positionX="-279" positionY="-126" width="128" height="103"/>
     </elements>
 </model>

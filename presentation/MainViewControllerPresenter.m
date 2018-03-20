@@ -11,9 +11,12 @@
 #import "MainView.h"
 
 @implementation MainViewControllerPresenter
--(id)createPresenter:(TodoRepository *)repository :(MainView *)view {
-    self.repository = repository;
-    self.mainView = view;
+
+-(instancetype)initWithRepositoryAndView:(TodoRepository *)repository :(MainView *)view {
+    if(self = [super init]){
+        self.repository = repository;
+        self.mainView = view;
+    }
     
     return self;
 }
