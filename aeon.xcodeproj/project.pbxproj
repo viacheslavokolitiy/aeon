@@ -127,10 +127,8 @@
 		4B2E2D31205FECA100D61144 /* aeon */ = {
 			isa = PBXGroup;
 			children = (
-				4B2E2DAC205FFA8600D61144 /* views */,
-				4B2E2DA8205FF84000D61144 /* presentation */,
-				4B2E2D6E205FED8600D61144 /* repository */,
-				4B2E2D6D205FED4700D61144 /* domain */,
+				4B55EEAC20629FB300F0D9A2 /* Repositories */,
+				4B55EEA820629F5B00F0D9A2 /* MVP */,
 				4B2E2D32205FECA100D61144 /* AppDelegate.h */,
 				4B2E2D33205FECA100D61144 /* AppDelegate.m */,
 				4B2E2D35205FECA100D61144 /* ViewController.h */,
@@ -163,7 +161,26 @@
 			path = aeonUITests;
 			sourceTree = "<group>";
 		};
-		4B2E2D6D205FED4700D61144 /* domain */ = {
+		4B55EEA820629F5B00F0D9A2 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				4B55EEAB20629F7800F0D9A2 /* Views */,
+				4B55EEAA20629F7000F0D9A2 /* Models */,
+				4B55EEA920629F6600F0D9A2 /* Presentation */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		4B55EEA920629F6600F0D9A2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4B2E2DA9205FF85D00D61144 /* MainViewControllerPresenter.h */,
+				4B2E2DAA205FF93F00D61144 /* MainViewControllerPresenter.m */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4B55EEAA20629F7000F0D9A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				4B2E2D9A205FF36C00D61144 /* Todo+CoreDataProperties.h */,
@@ -175,35 +192,26 @@
 				4B2E2DA0205FF36C00D61144 /* TodoList+CoreDataClass.m */,
 				4B2E2DA1205FF36C00D61144 /* TodoList+CoreDataProperties.m */,
 			);
-			path = domain;
-			sourceTree = SOURCE_ROOT;
+			path = Models;
+			sourceTree = "<group>";
 		};
-		4B2E2D6E205FED8600D61144 /* repository */ = {
-			isa = PBXGroup;
-			children = (
-				4B2E2D6F205FED9B00D61144 /* TodoRepository.h */,
-				4B2E2DA6205FF51600D61144 /* TodoRepository.m */,
-			);
-			path = repository;
-			sourceTree = SOURCE_ROOT;
-		};
-		4B2E2DA8205FF84000D61144 /* presentation */ = {
-			isa = PBXGroup;
-			children = (
-				4B2E2DA9205FF85D00D61144 /* MainViewControllerPresenter.h */,
-				4B2E2DAA205FF93F00D61144 /* MainViewControllerPresenter.m */,
-			);
-			path = presentation;
-			sourceTree = SOURCE_ROOT;
-		};
-		4B2E2DAC205FFA8600D61144 /* views */ = {
+		4B55EEAB20629F7800F0D9A2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4B2E2DAD205FFA9900D61144 /* MainView.h */,
 				4B2E2DAE205FFF7D00D61144 /* MainView.m */,
 			);
-			path = views;
-			sourceTree = SOURCE_ROOT;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B55EEAC20629FB300F0D9A2 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				4B2E2D6F205FED9B00D61144 /* TodoRepository.h */,
+				4B2E2DA6205FF51600D61144 /* TodoRepository.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 

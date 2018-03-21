@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewControllerPresenter.h"
 
 @interface ViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *placeholder;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnAddTodo;
+
+@property (strong, nonatomic) MainViewControllerPresenter *presenter;
 -(void)showCreateTodoDialog;
 @end
 
