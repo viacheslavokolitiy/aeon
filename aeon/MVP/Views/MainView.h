@@ -9,13 +9,17 @@
 #ifndef MainView_h
 #define MainView_h
 #import <UIKit/UIKit.h>
-@interface MainView : NSObject
-@property(nonatomic, weak) UILabel *placeholderView;
--(instancetype)initWithWidgets:(UILabel*)placeholder;
+
+@protocol MainViewContract
 -(void)showTodos;
 -(void)showCreateNewTodoButton;
 -(void)showPlaceholder;
 -(void)hidePlaceholder;
+@end
+
+@interface MainView : NSObject<MainViewContract>
+@property(nonatomic, weak) UILabel *placeholderView;
+-(instancetype)initWithWidgets:(UILabel*)placeholder;
 @end
 
 #endif /* MainView_h */

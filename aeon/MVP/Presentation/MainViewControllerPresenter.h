@@ -11,11 +11,14 @@
 
 #import "TodoRepository.h"
 #import "MainView.h"
-@interface MainViewControllerPresenter : NSObject
+@protocol Presenter
+-(void)getTodos;
+@end
+
+@interface MainViewControllerPresenter : NSObject<Presenter>
 @property(nonatomic, strong) TodoRepository *repository;
 @property(nonatomic, strong) MainView *mainView;
 -(instancetype)initWithRepositoryAndView:(TodoRepository*)repository : (MainView*)view;
--(void)getTodos;
 @end
 
 #endif /* MainViewControllerPresenter_h */
